@@ -1,0 +1,47 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+
+#define ___ &trans
+#define xxx &none
+
+#define QWERTY 0
+
+// tapping term definition
+#define TAP_TERM_MS 200
+#define QUICK_TAP_MS 125
+
+&lt {
+    quick-tap-ms = <QUICK_TAP_MS>;
+    tapping-term-ms = <TAP_TERM_MS>;
+};
+
+/ {
+    chosen { zmk,matrix_transform = &five_column_transform; };
+
+    behaviors { };
+
+    macros { };
+
+    combos { };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        qwerty {
+          display-name = "QWERTY";
+          bindings = <
+             //╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮     ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
+                &kp Q          &kp W          &kp E          &kp R          &kp T                &kp Y          &kp U          &kp I          &kp O          &kp P
+             //├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
+                &kp A          &kp S          &kp D          &kp F          &kp G                &kp H          &kp J          &kp K          &kp L          &kp SEMI
+             //├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
+                &kp Z          &kp X          &kp C          &kp V          &kp B                &kp N          &kp M          &kp COMMA      &kp DOT        &kp FSLH
+             //╰──────────────┴──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┴──────────────╯
+                                              xxx            xxx            &kp BSPC             &kp SPACE      xxx            xxx
+             //                              ╰──────────────┴──────────────┴──────────────╯     ╰──────────────┴──────────────┴──────────────╯
+            
+          >;
+        };
+    };
+};
