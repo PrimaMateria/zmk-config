@@ -29,10 +29,12 @@
 &lt {
   quick-tap-ms = <QUICK_TAP_MS>;
   tapping-term-ms = <TAP_TERM_MS>;
+  flavor = "tap-preffered"; 
 };
 
-&lt {
+&mt {
   tapping-term-ms = <TAP_TERM_MS>;
+  flavor = "tap-preffered"; 
 };
 
 / {
