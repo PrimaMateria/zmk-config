@@ -22,11 +22,15 @@
 
 
 // tapping term definition
-#define TAP_TERM_MS 200
+#define TAP_TERM_MS 250
 #define QUICK_TAP_MS 125
 
 &lt {
   quick-tap-ms = <QUICK_TAP_MS>;
+  tapping-term-ms = <TAP_TERM_MS>;
+};
+
+&lt {
   tapping-term-ms = <TAP_TERM_MS>;
 };
 
