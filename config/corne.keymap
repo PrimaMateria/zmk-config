@@ -70,7 +70,7 @@
     nvim_save: nvim_save {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
-      bindings = <&kp FSLH &kp FSLH>;
+      bindings = <&kp BSLH &kp BSLH>;
     };
     nvim_termesc: nvim_termesc {
       compatible = "zmk,behavior-macro";
@@ -100,7 +100,7 @@
         //├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
            &mt LSHIFT A   &lt L_FKEYS S  &lt L_NVIM D   &lt L_SYM_R F  &kp G                &kp H          &lt L_SYM_L J  &lt L_NAV K    &lt L_NUM L    &mt RSHIFT SEMI
         //├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┼──────────────┤
-           &kp Z          &mt LCTRL X    &mt LALT C     &kp V          &kp B                &kp N          &mt RALT M     &mt RCTRL COMMA &kp DOT       &kp FSLH
+           &kp Z          &mt LCTRL X    &mt LALT C     &kp V          &kp B                &kp N          &kp M          &mt LALT COMMA &mt LCTRL DOT  &kp FSLH
         //╰──────────────┴──────────────┼──────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼──────────────┼──────────────┴──────────────╯
                                          xxx            &mo L_TMUX     &kp BSPC             &lt L_ESC SPACE &mo L_WM      xxx
         //                              ╰──────────────┴──────────────┴──────────────╯     ╰──────────────┴──────────────┴──────────────╯
