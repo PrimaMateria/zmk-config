@@ -23,7 +23,7 @@
 #define L_UNI_R 12
 
 // tapping term definition
-#define TAP_TERM_MS 210
+#define TAP_TERM_MS 200
 #define QUICK_TAP_MS 125
 
 &lt {
