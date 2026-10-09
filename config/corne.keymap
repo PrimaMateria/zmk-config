@@ -93,7 +93,7 @@ ZMK_UNICODE_SINGLE(ndash, N2, N0, N1, N3)
     nvim_termesc: nvim_termesc {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
-      bindings = <&kp LC(RIGHT_BRACKET) &kp LC(LEFT_BRACKET)>;
+      bindings = <&kp LC(BACKSLASH) &kp LC(N)>;
     };
 
     /* tmux */
